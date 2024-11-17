@@ -33,12 +33,12 @@ a progressive Javascript framework.
 
 It packs in lots of features that will allow your E-Commerce business to scale in no time:
 
--   Descriptive and Simple Admin Panel.
--   Admin Dashboard.
--   Custom Attributes.
--   Built on Modular Approach.
--   Email parsing via Sendgrid.
--   Check out [these features and more](https://krayincrm.com/features/).
+- Descriptive and Simple Admin Panel.
+- Admin Dashboard.
+- Custom Attributes.
+- Built on Modular Approach.
+- Email parsing via Sendgrid.
+- Check out [these features and more](https://krayincrm.com/features/).
 
 **For Developers**:
 Take advantage of two of the hottest frameworks used in this project -- Laravel and Vue.js -- both of which have been used in Krayin CRM.
@@ -49,13 +49,13 @@ Take advantage of two of the hottest frameworks used in this project -- Laravel 
 
 ### Requirements
 
--   **SERVER**: Apache 2 or NGINX.
--   **RAM**: 3 GB or higher.
--   **PHP**: 8.1 or higher
--   **For MySQL users**: 5.7.23 or higher.
--   **For MariaDB users**: 10.2.7 or Higher.
--   **Node**: 8.11.3 LTS or higher.
--   **Composer**: 2.5 or higher
+- **SERVER**: Apache 2 or NGINX.
+- **RAM**: 3 GB or higher.
+- **PHP**: 8.1 or higher
+- **For MySQL users**: 5.7.23 or higher.
+- **For MariaDB users**: 10.2.7 or Higher.
+- **Node**: 8.11.3 LTS or higher.
+- **Composer**: 2.5 or higher
 
 ### Installation and Configuration
 
@@ -65,12 +65,18 @@ Take advantage of two of the hottest frameworks used in this project -- Laravel 
 composer create-project krayin/laravel-crm
 ```
 
--   Find **.env** file in root directory and change the **APP_URL** param to your **domain**.
+- Find **.env** file in root directory and change the **APP_URL** param to your **domain**.
 
--   Also, Configure the **Mail** and **Database** parameters inside **.env** file.
+- Also, Configure the **Mail** and **Database** parameters inside **.env** file.
 
 ```
 php artisan krayin-crm:install
+```
+
+**To actived styling css and image**:
+
+```
+php artisan vendor:publish --tag=public
 ```
 
 **To execute Krayin**:
@@ -92,7 +98,6 @@ Open the specified entry point in your hosts file in your browser or make an ent
 php artisan route:clear
 php artisan serve
 ```
-
 
 **How to log in as admin:**
 
