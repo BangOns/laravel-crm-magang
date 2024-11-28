@@ -182,6 +182,7 @@ Route::group(['middleware' => ['web', 'admin_locale']], function () {
 
                     Route::get('edit/{id?}', 'PersonController@edit')->name('admin.contacts.persons.edit');
                     Route::get('whatsapp/{name}', 'PersonController@whatsapp')->name('admin.contacts.persons.whatsapp');
+
                     Route::put('edit/{id}', 'PersonController@update')->name('admin.contacts.persons.update');
 
                     Route::get('search', 'PersonController@search')->name('admin.contacts.persons.search');

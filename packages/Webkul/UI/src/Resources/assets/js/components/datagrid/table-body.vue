@@ -48,17 +48,7 @@
 
         <td class="action">
           <template v-for="(action, index) in actions">
-            <!-- <a
-              v-if="action.key === 'whatsapp'"
-              :key="`whatsapp-${index}`"
-              :href="`https://wa.me/${row[action.phoneField]}`"
-              target="_blank"
-              :title="action.title"
-              :data-action="`https://wa.me/${row[action.phoneField]}`"
-              :data-method="action.method"
-            >
-              <i :class="`icon ${action.icon}`"></i>
-            </a> -->
+         
             <a
               :key="index"
               :href="row[`${action.key}_url`]"

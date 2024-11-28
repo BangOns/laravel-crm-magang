@@ -701,7 +701,11 @@ body {
   width: 50%;
 }
 .navbar-top .navbar-top-left .brand-logo {
-  padding: 10px 5px;
+  padding: 10px 5px 20px;
+}
+.navbar-top .navbar-top-left .brand-logo a img {
+  width: 100px;
+  height: 50px;
 }
 .navbar-top .navbar-top-right {
   display: inline-block;
@@ -1235,7 +1239,7 @@ body {
 .anonymous-layout-container .center-box .adjacent-center .brand-logo img {
   height: 50px;
   transform: translateY(-8px);
-  width: 280px;
+  width: 100px;
 }
 .anonymous-layout-container .center-box .adjacent-center .brand-logo p {
   color: #546e7a;

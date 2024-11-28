@@ -2,7 +2,9 @@
     <div class="navbar-top-left">
         <div class="brand-logo">
             <a href="{{ route('admin.dashboard.index') }}">
-                <img src="{{ asset('vendor/webkul/admin/assets/images/logo.svg') }}" alt="{{ config('app.name') }}"/>
+                <img src="{{ asset('vendor/webkul/admin/assets/images/logo-pribadi-text.svg') }}" alt="{{ config('app.name') }}" 
+                style="width: 140px; height: auto;"
+                />
             </a>
         </div>
     </div>

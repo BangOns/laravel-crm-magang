@@ -67,8 +67,7 @@
       "Webkul\\UI\\": "packages/Webkul/UI/src",
       "Webkul\\User\\": "packages/Webkul/User/src",
       "Webkul\\WebForm\\": "packages/Webkul/WebForm/src",
-      "Webkul\\Workflow\\": "packages/Webkul/Workflow/src",
-      "Webkul\\CustomWorkflow\\": "packages/Webkul/CustomWorkflow/src"
+      "Webkul\\Workflow\\": "packages/Webkul/Workflow/src"
     }
   },
   "autoload-dev": {

@@ -58,10 +58,11 @@
             <div class="adjacent-center">
 
                 <div class="brand-logo">
-                    <img src="{{ asset('vendor/webkul/admin/assets/images/logo.svg') }}"
+                    <img src="{{ asset('vendor/webkul/admin/assets/images/logo-pribadi.svg') }}"
+                    style="width: 100px; height: auto;"
                         alt="{{ config('app.name') }}" />
 
-                    <p>Consumers interaction goes smoothly and efficiently</p>
+                    <p>Welcome back admin Pribadi Premiere </p>
                 </div>
 
                 {!! view_render_event('admin.anonymous-layout.content.before') !!}
