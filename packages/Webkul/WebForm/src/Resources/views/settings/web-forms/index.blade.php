@@ -21,6 +21,7 @@
 
             @if (bouncer()->hasPermission('settings.automation.web_forms.create'))
                 <template v-slot:table-action>
+                  
                     <a href="{{ route('admin.settings.web_forms.create') }}" class="btn btn-md btn-primary">{{ __('web_form::app.create-title') }}</a>
                 </template>
             @endif

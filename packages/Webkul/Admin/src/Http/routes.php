@@ -182,7 +182,8 @@ Route::group(['middleware' => ['web', 'admin_locale']], function () {
 
                     Route::get('edit/{id?}', 'PersonController@edit')->name('admin.contacts.persons.edit');
                     Route::get('whatsapp/{name}', 'PersonController@whatsapp')->name('admin.contacts.persons.whatsapp');
-
+                    Route::get('importexcel', 'PersonController@PageimportExcel')->name('admin.contacts.persons.importexcel');
+                    Route::post('/importexcel', 'PersonController@importExcelData')->name('admin.person.importexcel');
                     Route::put('edit/{id}', 'PersonController@update')->name('admin.contacts.persons.update');
 
                     Route::get('search', 'PersonController@search')->name('admin.contacts.persons.search');

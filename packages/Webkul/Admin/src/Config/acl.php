@@ -196,6 +196,12 @@ return [
         'sort'  => 4,
     ],
     [
+        'key'   => 'contacts.persons.import',
+        'name'  => 'admin::app.acl.import',
+        'route' => ['admin.person.importexceldata', 'admin.person.importexceldata'],
+        'sort'  => 5,
+    ],
+    [
         'key'   => 'contacts.organizations',
         'name'  => 'admin::app.acl.organizations',
         'route' => 'admin.contacts.organizations.index',

@@ -2,7 +2,10 @@
 
 namespace Webkul\Admin\Http\Controllers\Contact;
 
+use App\Imports\PersonsImport;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
+use Maatwebsite\Excel\Facades\Excel;
 use Webkul\Admin\Http\Controllers\Controller;
 use Webkul\Attribute\Http\Requests\AttributeForm;
 use Webkul\Contact\Repositories\PersonRepository;
@@ -89,6 +92,26 @@ class PersonController extends Controller
 
         // Mengembalikan view dengan JavaScript untuk membuka link di tab baru
         return view('admin::contacts.persons.open-whatsapp', ['whatsappUrl' => $whatsappUrl]);
+    }
+    public function PageimportExcel()
+    {
+        return view('admin::contacts.persons.import-excel');
+    }
+    public function importExcelData(Request $request)
+    {
+        $request->validate([
+            'import_file_excel' => [
+                'required',
+                'file'
+            ]
+        ]);
+
+        try {
+            Excel::import(new PersonsImport, $request->file('import_file_excel'), 's3');
+            return back()->with('success', 'Data berhasil di upload');
+        } catch (\Exception $e) {
+            return back()->withError('Error : ' . $e->getMessage())->withInput();
+        }
     }
     /**
      * Update the specified resource in storage.

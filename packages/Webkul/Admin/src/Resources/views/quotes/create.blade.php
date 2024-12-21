@@ -57,7 +57,7 @@ $quote->fill([
 
                         {!! view_render_event('admin.quotes.create.form_controls.information.before') !!}
 
-                        <accordian :title="{{ __('admin::app.quotes.quote-information') }}" :active="true">
+                        <accordian :title={{ __('admin::app.quotes.quote-information') }} :active="true">
                             <div slot="body">
 
                                 @include('admin::common.custom-attributes.edit', [

@@ -16,6 +16,7 @@ class PersonDataGrid extends DataGrid
      * @var boolean
      */
     protected $export;
+    protected $import;
 
     /**
      * Create datagrid instance.
@@ -27,6 +28,7 @@ class PersonDataGrid extends DataGrid
         parent::__construct();
 
         $this->export = bouncer()->hasPermission('contacts.persons.export') ? true : false;
+        $this->import = bouncer()->hasPermission('contacts.persons.import') ? true : false;
     }
 
     /**

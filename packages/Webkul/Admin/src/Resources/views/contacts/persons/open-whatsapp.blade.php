@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <h1>Loading To Redirect to Whatsapp</h1>
+      <h1>Loading To Redirect to Whatsapp</h1>
     <script >
          const whatsappUrl = '<?php echo $whatsappUrl; ?>';
         window.location.href = whatsappUrl;
